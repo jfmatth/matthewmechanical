@@ -5,7 +5,7 @@ COPY . /static-site
 
 # Command Hugo to build the static site from the source files,
 # setting the destination to the public directory.
-RUN hugo --logLevel debug --source=/static-site --destination=/static-site/public
+RUN hugo --logLevel debug --source=/static-site --destination=/static-site/public --theme hugo-book
 
 # Install NGINX, remove the default NGINX index.html file, and
 # copy the built static site files to the NGINX html directory.
