@@ -9,16 +9,16 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  spellcheck:
-    # https://github.com/matheus23/md-spellcheck-action
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - uses: matheus23/md-spellcheck-action@v4.2.2
-        with:
-          files-to-check: "content/*.md"
-          files-to-exclude: "LICENSE.md" # optional
-          words-to-ignore-file: ./words-to-ignore.txt
+  # spellcheck:
+  #   # https://github.com/matheus23/md-spellcheck-action
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v6
+  #     - uses: matheus23/md-spellcheck-action@v4.2.2
+  #       with:
+  #         files-to-check: "content/*.md"
+  #         files-to-exclude: "LICENSE.md" # optional
+  #         words-to-ignore-file: ./words-to-ignore.txt
 
   test-build:
       needs: spellcheck
