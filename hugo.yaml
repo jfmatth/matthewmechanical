@@ -6,7 +6,9 @@ copyright: "copyright 2026"
 
 # Book configuration
 disablePathToLower: true
-enableGitInfo: true
+
+## DO NOT TURN THIS ON! ##
+enableGitInfo: false
 
 # Needed for mermaid/katex shortcodes
 markup:
