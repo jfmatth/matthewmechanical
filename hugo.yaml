@@ -1,8 +1,8 @@
 baseURL: http://0.0.0.0:1313/
-title: Documentation
+title: Matthew Mechanical
 theme: hugo-book
 
-copyright: "This is a copyright placeholder"
+copyright: "copyright 2026"
 
 # Book configuration
 disablePathToLower: true
@@ -39,9 +39,10 @@ markup:
 
 menu:
   home:
-    - name: "Documentation"
+    - name: "My Documentation"
       pageRef: "/docs/"
       weight: 10
+
     - name: "Github"
       url: "https://github.com/alex-shpak/hugo-book/"
       weight: 20
