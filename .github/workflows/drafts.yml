@@ -21,7 +21,7 @@ jobs:
   #         words-to-ignore-file: ./words-to-ignore.txt
 
   test-build:
-      needs: spellcheck
+      # needs: spellcheck
       runs-on: ubuntu-latest
 
       steps:
