@@ -18,3 +18,7 @@ Precedence  Label  Prefix
 ```
 https://kb.firedaemon.com/support/solutions/articles/4000160803-prioritising-ipv4-over-ipv6-on-windows-10-and-11
 ```
+
+```
+podman run --rm --network=host matthewmechanical
+```
