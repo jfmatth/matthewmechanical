@@ -17,7 +17,7 @@ image:
 imagePullSecrets: []
 # This is to override the chart name.
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "matthewmechanical"
 
 # This section builds out the service account more information can be found here: https://kubernetes.io/docs/concepts/security/service-accounts/
 serviceAccount:
@@ -79,13 +79,23 @@ ingress:
 httpRoute:
   # HTTPRoute enabled.
   enabled: true
+
+  # SSL Only
+  sslOnly: true
+  ssLParentRefs:
+  - name: traefik-gateway
+    sectionName: http
+    namespace: traefik
+
   # HTTPRoute annotations.
   annotations: {}
   # Which Gateways this Route is attached to.
+  
   parentRefs:
   - name: traefik-gateway
-    sectionName: http
-    # namespace: default
+    sectionName: matthewmechanical-https
+    namespace: traefik
+    
   # Hostnames matching HTTP header.
   hostnames:
   - matthewmechanical.com
