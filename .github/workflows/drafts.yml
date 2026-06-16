@@ -61,5 +61,5 @@ jobs:
             context: .
             push: true
             tags: |
-              ghcr.io/${{ github.repository }}:d-${{ steps.define_version.outputs.VER }}
+              ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VER }}-draft
   
