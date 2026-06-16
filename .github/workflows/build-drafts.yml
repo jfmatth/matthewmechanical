@@ -65,4 +65,4 @@ jobs:
             push: true
             tags: |
               ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VER }}-draft
-              ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VER }}-${{ github.sha }}#::substring(0,7)
+              ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VER }}-${{ env.SHORT_SHA }}
