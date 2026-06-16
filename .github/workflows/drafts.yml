@@ -42,10 +42,19 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN }}
 
-        - name: Build Only!
-          uses: docker/build-push-action@v7
+        # - name: Build Only!
+        #   uses: docker/build-push-action@v7
+        #   with:
+        #     context: .
+        #     push: false
+        #     tags: |
+        #       ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VER }}
+
+        - name: Build and push Docker image
+          uses: docker/build-push-action@v6
           with:
             context: .
-            push: false
+            push: true
             tags: |
-              ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VER }}
+              ghcr.io/${{ github.repository }}:${{ steps.define_version.outputs.VER }}-draft
+  
