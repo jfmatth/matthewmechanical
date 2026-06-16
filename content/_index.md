@@ -4,7 +4,7 @@ layout: landing
 
 <div class="book-hero">
 
-# Documentation {anchor=false}
+# Link to Documentation {anchor=false}
 This content is rendered from `content/index.md`
 
 {{<button href="/docs/">}}Action{{</button>}}

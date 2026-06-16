@@ -1,4 +1,4 @@
-baseURL: http://0.0.0.0:1313/
+baseURL: "/"
 title: Matthew Mechanical
 theme: hugo-book
 
@@ -45,15 +45,15 @@ menu:
       pageRef: "/docs/"
       weight: 10
 
-    - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book/"
-      weight: 20
+    # - name: "Github"
+    #   url: "https://github.com/alex-shpak/hugo-book/"
+    #   weight: 20
 
   # before: []
-  after:
-    - name: "Github"
-      url: "https://github.com/alex-shpak/hugo-book"
-      weight: 10
+  # after:
+  #   - name: "Github"
+  #     url: "https://github.com/alex-shpak/hugo-book"
+  #     weight: 10
 
 taxonomies:
   tag: tags
