@@ -1,5 +1,10 @@
 name: build_image
 
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
 on:
   push:
     branches:
